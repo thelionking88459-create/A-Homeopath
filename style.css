@@ -1,0 +1,114 @@
+/* Reset & Base Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
+    background-color: #f8fafc; /* Very light cool grey for contrast */
+    color: #1e293b; /* Dark slate text for readability */
+    line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+    background: linear-gradient(135deg, #0f172a 0%, #334155 100%);
+    color: white;
+    text-align: center;
+    padding: 4rem 1.5rem;
+    border-bottom: 4px solid #3b82f6; /* Bright blue accent line */
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+    letter-spacing: -0.05rem;
+}
+
+header p {
+    font-size: 1.1rem;
+    color: #cbd5e1;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Container & Grid for Responsive Layout */
+.container {
+    max-width: 1100px;
+    margin: 4rem auto;
+    padding: 0 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+/* Premium Card Styling */
+.card {
+    background: white;
+    padding: 2.5rem 2rem;
+    border-radius: 16px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -4px rgba(0, 0, 0, 0.02);
+    text-align: center;
+    border: 1px solid #e2e8f0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Card Hover Animation */
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+    border-color: #cbd5e1;
+}
+
+.card h2 {
+    color: #0f172a;
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+    font-weight: 800;
+}
+
+.card p {
+    color: #64748b;
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+}
+
+/* Modern Price Tag (Pill Shape) */
+.price {
+    font-size: 2rem;
+    color: #10b981; /* Emerald green for money/success */
+    font-weight: 800;
+    margin: 1rem auto 1.5rem auto;
+    background: #ecfdf5;
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    border-radius: 9999px; 
+}
+
+/* Call to Action Button */
+.btn {
+    background-color: #3b82f6; 
+    color: white;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    display: block;
+    font-weight: 700;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+/* Button Hover Animation */
+.btn:hover {
+    background-color: #2563eb;
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.25);
+    transform: scale(1.02);
+}
